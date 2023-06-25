@@ -3,7 +3,7 @@ import { getAppDirectories, getConfig } from "../config.js";
 import { spawnSync } from "child_process";
 import chalk from 'chalk';
 
-export default function () {
+export default function (): void {
     const config = getConfig();
 
     let directories: string[] = getAppDirectories((config));
